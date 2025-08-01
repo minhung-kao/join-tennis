@@ -7,44 +7,75 @@
   <style>
     body {
       font-family: 'Noto Sans TC', sans-serif;
-      background-color: #f9f9f9;
-      color: #333;
       margin: 0;
       padding: 0;
-      text-align: center;
+      background-color: #f9f9f9;
+      color: #333;
     }
     header {
-      background-color: #00aa55;
-      color: white;
-      padding: 40px 20px;
+      background-color: #ffffff;
+      text-align: center;
+      padding: 30px 20px 10px;
     }
-    h1 {
-      margin: 0;
-      font-size: 3em;
+    header img {
+      max-width: 220px;
+      height: auto;
     }
     nav {
-      background-color: #333;
-      padding: 10px;
+      background-color: #00aa55;
+      text-align: center;
+      padding: 12px 0;
     }
     nav a {
       color: white;
-      margin: 0 10px;
       text-decoration: none;
+      margin: 0 15px;
       font-weight: bold;
+      font-size: 1.1em;
     }
     section {
       padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      color: #00aa55;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 10px;
+    }
+    .course-card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    .course-card h3 {
+      margin-top: 0;
+      color: #333;
     }
     footer {
       background-color: #eee;
       padding: 20px;
+      text-align: center;
       font-size: 0.9em;
+    }
+
+    /* 手機版優化 */
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+      section {
+        padding: 30px 15px;
+      }
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>JOIN 嘉義網球</h1>
+    <img src="https://minhung-kao.github.io/join-tennis/logo.png" alt="JOIN Chiayi Tennis Logo" />
     <p>揮拍打開健康、社交與自信的新生活 🎾</p>
   </header>
 
@@ -57,26 +88,45 @@
 
   <section id="about">
     <h2>關於我們</h2>
-    <p>JOIN 是嘉義在地的專業網球團隊，由具有選手背景與教學經驗的教練領軍，致力於讓每一位學員找到屬於自己的節奏與熱情。</p>
+    <p>JOIN 是嘉義在地的專業網球團隊，由擁有選手背景與五年教學經驗的教練帶領，致力於推廣健康、自信與快樂的運動學習環境。從初學者到進階者，我們都有適合的課程與關懷。</p>
   </section>
 
   <section id="courses">
     <h2>課程介紹</h2>
-    <p>提供一對一進階訓練、團體班、兒童與成人課程，依照程度與年齡分班。</p>
+
+    <div class="course-card">
+      <h3>兒童基礎班（6–12歲）</h3>
+      <p>從握拍、基本動作、遊戲入門，培養興趣與自信心。</p>
+    </div>
+
+    <div class="course-card">
+      <h3>青少年進階訓練（13–18歲）</h3>
+      <p>技術精進、比賽策略、體能訓練，適合已有基礎的學生。</p>
+    </div>
+
+    <div class="course-card">
+      <h3>成人興趣班</h3>
+      <p>歡迎零基礎或有打球經驗者，提升技巧、放鬆身心、建立社交圈。</p>
+    </div>
+
+    <div class="course-card">
+      <h3>一對一 / 一對二 專業課程</h3>
+      <p>量身打造個人化訓練內容，目標導向學習成效佳。</p>
+    </div>
   </section>
 
   <section id="location">
     <h2>上課地點</h2>
-    <p>民雄網球場、嘉義公園網球場。</p>
+    <p>📍 民雄地區為主;嘉義市地區為輔</p>
   </section>
 
   <section id="contact">
     <h2>聯絡我們</h2>
-    <p>歡迎透過 <a href="mailto:your@email.com">Email</a> 或 <a href="https://instagram.com/">Instagram</a> 私訊報名。</p>
+    <p>📩 歡迎透過 <a href="mailto:your@email.com">Email</a> 或 <a href="https://www.instagram.com/">Instagram</a> 私訊我們，了解更多課程或報名試打！</p>
   </section>
 
   <footer>
-    &copy; 2025 JOIN 嘉義網球｜設計＆維護：高旻紘
+    &copy; 2025 JOIN 嘉義網球｜網站設計：高旻紘
   </footer>
 </body>
 </html>
