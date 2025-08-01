@@ -11,27 +11,33 @@
       font-family: 'Noto Sans TC', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f9f9f9;
-      color: #333;
+      background-color: #fdf8f4;
+      color: #3a2c1e;
     }
 
     header {
-      background-color: #ffffff;
-      text-align: center;
-      padding: 30px 20px 10px;
-    }
+  background-color: #fff;
+  text-align: center;
+  padding: 10px 20px 5px;
+}
     header img {
-      max-width: 250px;
-      height: auto;
-    }
+  max-width: 180px;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
     nav {
-      background-color: #00aa55;
+      background-color: #bb8558;
       text-align: center;
       padding: 12px 0;
     }
     nav a {
-      color: white;
+      color: #fffaf5;
       text-decoration: none;
       margin: 0 15px;
       font-weight: bold;
@@ -44,7 +50,7 @@
       margin: auto;
     }
     h2 {
-      color: #00aa55;
+      color: #b87333;
       border-bottom: 2px solid #ccc;
       padding-bottom: 10px;
     }
@@ -52,20 +58,21 @@
     .course-card {
       background-color: #fff;
       border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
       padding: 20px;
       margin-bottom: 20px;
     }
     .course-card h3 {
       margin-top: 0;
-      color: #333;
+      color: #5a4031;
     }
 
     footer {
-      background-color: #eee;
+      background-color: #eee4db;
       padding: 20px;
       text-align: center;
       font-size: 0.9em;
+      color: #5a4031;
     }
 
     @media (max-width: 600px) {
@@ -109,10 +116,14 @@
     <a href="#signup">立即報名</a>
   </nav>
 
-  
+  <section id="about">
+    <h2>關於我們</h2>
     <h3>教學理念</h3>
-    <p>我相信每個人都能找到屬於自己的揮拍節奏。無論是想成為選手，還是將網球作為身心調劑的運動，每一次擊球都是一種自我探索。我重視基本功與耐心指導，致力於建立學員的自信與成就感，讓網球成為生活中的一部分，而不只是場上的競技。</p>
+    <p>我相信每個人都能找到屬於自己的揮拍節奏。<br>
+      無論是想成為選手，還是將網球作為身心調劑的運動，每一次擊球都是一種自我探索。<br>
+      我重視基本功與耐心指導，致力於建立學員的自信與成就感，讓網球成為生活中的一部分，而不只是場上的競技。</p>
 
+    <h3>教練經歷</h3>
     <ul>
       <li>ITF國際網球錦標賽巴基斯坦站 雙打4強</li>
       <li>全國青少年排名賽冠軍</li>
@@ -124,6 +135,9 @@
       <li>參與學校US PTR 網球計畫教練</li>
     </ul>
   </section>
+  </section>
+
+  
 
   <section id="courses">
     <h2>課程介紹</h2>
@@ -140,23 +154,43 @@
       <p>從握拍、基本動作、遊戲入門，培養興趣與自信心。</p>
     </div>
     <div class="course-card">
-      <h3>🏃 青少年進階訓練（13–18歲）</h3>
+      <h3>🏃 進階訓練</h3>
       <p>技術精進、比賽策略、體能訓練，適合已有基礎的學生。</p>
+    </div>
+  </section>
+
+  <section id="faq">
+    <h2>常見問題 Q&A</h2>
+    <div class="course-card">
+      <h3>Q：從來沒打過網球也可以參加嗎？</h3>
+      <p>A：當然可以！我們設有初學者課程，從握拍、基本步伐一步步教起，不怕太晚來，只怕你不來！</p>
+    </div>
+    <div class="course-card">
+      <h3>Q：需要自備球拍嗎？</h3>
+      <p>A：初期可借用教練球拍，之後有近一步需求後會依照個人建議適合的裝備。</p>
+    </div>
+    <div class="course-card">
+      <h3>Q：課程有哪些上課時間？</h3>
+      <p>A：時段彈性，平日晚間與假日皆有開課，歡迎私訊洽詢可預約時段。</p>
+    </div>
+    <div class="course-card">
+      <h3>Q：孩子年紀還小可以學嗎？</h3>
+      <p>A：我們歡迎6歲以上兒童參與，會使用兒童球與趣味教學方式循序漸進。</p>
     </div>
   </section>
 
   <section id="carousel">
   <h2>活動剪影</h2>
   <div class="carousel">
-    <img src="https://github.com/minhung-kao/join-tennis/blob/main/IMG_1763.jpg?raw=true" alt="課程照片1" />
-    <img src="https://github.com/minhung-kao/join-tennis/blob/main/IMG_1765.jpg?raw=true" alt="課程照片2" />
-    <img src="https://github.com/minhung-kao/join-tennis/blob/main/IMG_1767.jpg?raw=true" alt="課程照片3" />
+    <img src="images/class1.jpg" alt="課程照片1" />
+    <img src="images/class2.jpg" alt="課程照片2" />
+    <img src="images/class3.jpg" alt="課程照片3" />
   </div>
 </section>
 
   <section id="location">
     <h2>上課地點</h2>
-    <p>📍 民雄地區為主：嘉義公園網球場、民雄網球場</p>
+    <p>📍 民雄地區為主</p>
   </section>
 
   <section id="contact">
