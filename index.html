@@ -126,8 +126,51 @@
 </p>
 
     <h3>教練經歷</h3>
-<div style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 20px;">
-  <ul style="flex: 1; min-width: 250px; margin: 0;">
+<!-- 加入動畫與圖片放大效果 -->
+<style>
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .coach-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 20px;
+    animation: fadeIn 1s ease-in-out;
+  }
+
+  .coach-section ul {
+    flex: 1;
+    min-width: 250px;
+    margin: 0;
+  }
+
+  .coach-photo {
+    flex: 1;
+    width: 100%;
+    max-width: 400px; /* 電腦版更大 */
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.2s ease-in-out;
+  }
+
+  @media (max-width: 600px) {
+    .coach-photo {
+      max-width: 100%;
+    }
+  }
+</style>
+
+<div class="coach-section">
+  <ul>
     <li>ITF國際網球錦標賽巴基斯坦站雙打4強</li>
     <li>全國青少年排名賽冠軍</li>
     <li>Victo.ly公開認證組亞軍</li>
@@ -139,7 +182,11 @@
     <li>參與學校US PTR 網球計畫教練</li>
   </ul>
 
-  <img src="https://github.com/minhung-kao/join-tennis/blob/main/IMG_9498.jpg?raw=true" alt="教練照片" style="flex: 1; max-width: 300px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" />
+  <img
+    src="https://github.com/minhung-kao/join-tennis/blob/main/IMG_9498.jpg?raw=true"
+    alt="教練照片"
+    class="coach-photo"
+  />
 </div>
 
   </section>
